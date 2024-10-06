@@ -20,18 +20,17 @@ class StatementDemo
 			Statement s = c.createStatement();
 			
 			Scanner sc = new Scanner(System.in);
-			
 			System.out.println("Enter Customer Id: ");
-            int id = sc.nextInt();
-            
-            System.out.println("Enter Customer Name: ");
-            String name = sc.next();
-            
-            System.out.println("Enter Customer Age: ");
-            int age = sc.nextInt();
-            
-            System.out.println("Enter Customer State: ");
-            String state = sc.next();
+			int id = sc.nextInt();
+			
+			System.out.println("Enter Customer Name: ");
+			String name = sc.next();
+			
+			System.out.println("Enter Customer Age: ");
+			int age = sc.nextInt();
+			
+			System.out.println("Enter Customer State: ");
+			String state = sc.next();
 			
 			String query = "insert into customer (cid,cname,cage,cstate) values (" + id + ", '" + name + "', '" + age + "','" + state + "')";
 
@@ -63,20 +62,18 @@ class StatementDemo
 			Scanner sc = new Scanner(System.in);
 			
 			System.out.println("Enter Customer Id which you want to Update Data : ");
-            int id = sc.nextInt();
-            
-            System.out.println("Set Customer Name : ");
-            String name = sc.next();
-            
-            System.out.println("Set Customer Age : ");
-            int age = sc.nextInt();
-            
-            System.out.println("Set Customer State : ");
-            String state = sc.next();
+			int id = sc.nextInt();
 			
+                        System.out.println("Set Customer Name : ");
+                        String name = sc.next();
+            
+                        System.out.println("Set Customer Age : ");
+                        int age = sc.nextInt();
+            
+                        System.out.println("Set Customer State : ");
+                        String state = sc.next();
 			
 			String query = "update customer set cname = '" + name + "', cage = '" + age + "',cstate = '" + state + "' where cid = " + id;
-
 
 			int i = s.executeUpdate(query);
 			
@@ -134,8 +131,8 @@ class StatementDemo
 			ResultSet rs = s.executeQuery("select * from customer");
 
 			System.out.println("\n*************************************************");
-            System.out.println("                📋 Customer Records 📋            ");
-            System.out.println("*************************************************");
+                        System.out.println("                📋 Customer Records 📋            ");
+                        System.out.println("*************************************************");
 
             while (rs.next()) 
             {
