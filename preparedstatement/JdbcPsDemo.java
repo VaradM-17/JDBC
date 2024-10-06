@@ -25,13 +25,13 @@ public class JdbcPsDemo
             int id = sc.nextInt();
             
             System.out.println("Enter Customer Name: ");
-            String name = sc.next();
+            String name = sc.nextLine();
             
             System.out.println("Enter Customer Age: ");
             int age = sc.nextInt();
             
             System.out.println("Enter Customer State: ");
-            String state = sc.next();
+            String state = sc.nextLine();
             
             ps.setInt(1, id);
             ps.setString(2, name);
@@ -66,13 +66,13 @@ public class JdbcPsDemo
             int id = sc.nextInt();
 
             System.out.println("Enter New Customer Name: ");
-            String name = sc.next();
+            String name = sc.nextLine();
 
             System.out.println("Enter New Customer Age: ");
             int age = sc.nextInt();
 
             System.out.println("Enter New Customer State: ");
-            String state = sc.next();
+            String state = sc.nextLine();
 
             ps.setString(1, name);
             ps.setInt(2, age);
